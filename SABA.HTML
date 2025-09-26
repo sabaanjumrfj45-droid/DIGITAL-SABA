@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saba Anjum — Typing • Data Entry • Video Editing • Canva Designing • Web Development</title>
+    <meta name="description" content="Saba Anjum — प्रोफेशनल टाइपिंग, डेटा एंट्री, वीडियो एडिटिंग, Canva डिज़ाइन और वेब डेवलपमेंट सेवाएँ। तेज़, भरोसेमंद और मोबाइल-फ्रेंडली समाधान। संपर्क: +91 9263247212 (WhatsApp)।">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #1a5276; /* Navy blue */
+            --secondary: #148f77; /* Teal */
+            --accent: #e74c3c;
+            --light: #f8f9fa;
+            --dark: #2c3e50;
+            --text: #333333;
+            --text-light: #666666;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            color: var(--text);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        h1, h2, h3, h4 {
+            margin-bottom: 1rem;
+            color: var(--dark);
+            font-weight: 700;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary);
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--primary);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            margin-left: 30px;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--white);
+            padding: 150px 0 100px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .hero .btn-primary {
+            background-color: var(--white);
+            color: var(--primary);
+        }
+        
+        .hero .btn-primary:hover {
+            background-color: var(--light);
+            color: var(--primary);
+        }
+        
+        .hero .btn-secondary {
+            border-color: var(--white);
+            color: var(--white);
+        }
+        
+        .hero .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--primary);
+        }
+        
+        /* About Section */
+        .about {
+            background-color: var(--light);
+        }
+        
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Portfolio Section */
+        .portfolio {
+            background-color: var(--light);
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .portfolio-item {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .portfolio-img {
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 1.2rem;
+        }
+        
+        .portfolio-content {
+            padding: 20px;
+        }
+        
+        .portfolio-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .portfolio-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        /* Testimonials Section */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .testimonial-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary);
+            opacity: 0.2;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: var(--light);
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-form {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(26, 82, 118, 0.2);
+        }
+        
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            margin-bottom: 30px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        
+        .footer-links li {
+            margin: 0 15px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+        }
+        
+        .copyright {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero {
+                padding: 120px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 50px;
+                transition: var(--transition);
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-menu li {
+                margin: 15px 0;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            section {
+                padding: 60px 0;
+            }
+            
+            .hero {
+                padding: 100px 0 60px;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+            
+            .service-card, .portfolio-item, .testimonial-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919263247212" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i>💬</i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Saba Anjum</div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu">
+                <li><a href="#home">होम</a></li>
+                <li><a href="#about">परिचय</a></li>
+                <li><a href="#services">सेवाएँ</a></li>
+                <li><a href="#portfolio">पोर्टफोलियो</a></li>
+                <li><a href="#testimonials">समीक्षाएँ</a></li>
+                <li><a href="#contact">संपर्क</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>नमस्ते — मैं Saba Anjum, आपकी डिजिटल असिस्टेंट।</h1>
+            <p>तेज़ टाइपिंग, सटीक डेटा एंट्री, क्रिएटिव वीडियो एडिटिंग, Canva डिज़ाइन और छोटे-बड़े वेब प्रोजेक्ट।</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/919263247212" class="btn btn-primary">मुझे WhatsApp करें</a>
+                <a href="#portfolio" class="btn btn-secondary">प्रोजेक्ट देखें</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>परिचय</h2>
+            <div class="about-content">
+                <p>मैं Saba Anjum, डिजिटल सर्विसेज में अनुभवी — टाइपिंग और डेटा एंट्री में तेज़, वीडियो एडिटिंग और Canva डिज़ाइन में क्रिएटिव, और छोटे-से-मीटर वेब डेवलपमेंट में भरोसेमंद। मैं समय पर डिलीवरी और क्लाइंट-संतुष्टि पर भरोसा करती हूँ।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>मेरी सेवाएँ</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">⌨️</div>
+                    <h3>टाइपिंग और डेटा एंट्री</h3>
+                    <p>PDF/Images → Word/Excel, Form filling, Data cleaning, MS Excel functions</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎬</div>
+                    <h3>वीडियो एडिटिंग</h3>
+                    <p>Shorts, YouTube videos, Reels, Transitions, Subtitles और रंग सुधार</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Canva डिज़ाइनिंग</h3>
+                    <p>Social posts, Instagram stories, Flyers, Banners, Logo mockups</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>वेब डेवलपमेंट</h3>
+                    <p>Landing pages, Portfolio websites, Contact forms, Responsive design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>मेरे प्रोजेक्ट्स</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-img">YouTube Video Screenshot</div>
+                    <div class="portfolio-content">
+                        <h3>YouTube Intro + Edit</h3>
+                        <p>2.5 min promo video, color grade, subtitles, exported for web</p>
+                        <div class="portfolio-meta">
+                            <span>Video Editing</span>
+                            <span>जनवरी 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">Website Screenshot</div>
+                    <div class="portfolio-content">
+                        <h3>E-commerce Landing Page</h3>
+                        <p>Responsive page + contact form using HTML/CSS</p>
+                        <div class="portfolio-meta">
+                            <span>Web Development</span>
+                            <span>मार्च 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">Canva Design Screenshot</div>
+                    <div class="portfolio-content">
+                        <h3>Canva Social Pack</h3>
+                        <p>10 Instagram posts + story templates for a clothing brand</p>
+                        <div class="portfolio-meta">
+                            <span>Canva Design</span>
+                            <span>अप्रैल 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">Data Entry Screenshot</div>
+                    <div class="portfolio-content">
+                        <h3>Data Entry / CRM Upload</h3>
+                        <p>2000+ records cleaned & uploaded to client CRM</p>
+                        <div class="portfolio-meta">
+                            <span>Data Entry</span>
+                            <span>मई 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>ग्राहक समीक्षाएँ</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">बहुत अच्छा काम — समय पर और गुणवत्ता उत्तम!</div>
+                    <div class="testimonial-author">— ग्राहक का नाम, व्यवसाय</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">Saba ने मेरे वीडियो को बहुत प्रोफेशनल तरीके से एडिट किया। बहुत संतुष्ट हूँ!</div>
+                    <div class="testimonial-author">— दूसरा ग्राहक, कंपनी</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">तेज काम, सही कीमत, और बेहतरीन संचार। जल्द ही फिर से काम करूंगा!</div>
+                    <div class="testimonial-author">— तीसरा ग्राहक, व्यवसाय</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>संपर्क करें</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>प्रोजेक्ट शुरू करना है?</h3>
+                    <p>मुझसे सीधे WhatsApp पर संपर्क करें — +91 9263247212</p>
+                    <a href="https://wa.me/919263247212" class="btn btn-primary" style="margin-top: 20px;">WhatsApp पर संपर्क करें</a>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">नाम</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">ईमेल</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">मोबाइल</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">सेवा चुनें</label>
+                        <select id="service" class="form-control" required>
+                            <option value="">-- सेवा चुनें --</option>
+                            <option value="typing">टाइपिंग और डेटा एंट्री</option>
+                            <option value="video-editing">वीडियो एडिटिंग</option>
+                            <option value="canva-design">Canva डिज़ाइनिंग</option>
+                            <option value="web-development">वेब डेवलपमेंट</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">प्रोजेक्ट का विवरण</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="file">फाइल अटैच करें (यदि कोई हो)</label>
+                        <input type="file" id="file" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">संदेश भेजें</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Saba Anjum</h3>
+                <p>डिजिटल सर्विसेज में आपकी विश्वसनीय साथी</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#home">होम</a></li>
+                <li><a href="#about">परिचय</a></li>
+                <li><a href="#services">सेवाएँ</a></li>
+                <li><a href="#portfolio">पोर्टफोलियो</a></li>
+                <li><a href="#contact">संपर्क</a></li>
+            </ul>
+            <div class="copyright">
+                © <span id="current-year">2025</span> Saba Anjum — All rights reserved. | WhatsApp: +91 9263247212
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-menu').classList.remove('active');
+            });
+        });
+        
+        // Update current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Simple form submission (for demonstration)
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('धन्यवाद! आपका संदेश प्राप्त हो गया है। मैं जल्द ही आपसे संपर्क करूंगी।');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
